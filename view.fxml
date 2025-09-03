@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.GridPane?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pl.coffee.kalkulator.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <AnchorPane prefHeight="60" prefWidth="300">
+
+    <TextArea fx:id="display" styleClass="displayCSS" text="0" layoutX="-5" layoutY="-15" prefHeight="26.0" prefWidth="260.0"/>
+
+    </AnchorPane>
+
+    <GridPane hgap="5" vgap="5">
+
+    <Button text="0" fx:id="ZEROBT" onAction="#ZEROBTAC" styleClass="numbt" GridPane.rowIndex="34" GridPane.columnIndex="6" />
+    <Button text="⌫" fx:id="BACKBT" onAction="#BACKBTAC" styleClass="opbt" GridPane.rowIndex="34" GridPane.columnIndex="0"/>
+    <Button text="," fx:id="DOTBT" onAction="#DOTBTAC" styleClass="opbt" GridPane.rowIndex="34" GridPane.columnIndex="12" />
+
+        <Button text="1" fx:id="ONEBT" onAction="#ONEBTAC" styleClass="numbt" GridPane.rowIndex="28" GridPane.columnIndex="0"/>
+        <Button text="2" fx:id="TWOBT" onAction="#TWOBTAC" styleClass="numbt" GridPane.rowIndex="28" GridPane.columnIndex="6"/>
+        <Button text="3" fx:id="THREEBT" onAction="#THREEBTAC" styleClass="numbt" GridPane.rowIndex="28" GridPane.columnIndex="12"/>
+
+        <Button text="4" fx:id="FOURBT" onAction="#FOURBTAC" styleClass="numbt" GridPane.rowIndex="22" GridPane.columnIndex="0"/>
+        <Button text="5" fx:id="FIVEBT" onAction="#FIVEBTAC" styleClass="numbt" GridPane.rowIndex="22" GridPane.columnIndex="6"/>
+        <Button text="6" fx:id="SIXBT" onAction="#SIXBTAC" styleClass="numbt" GridPane.rowIndex="22" GridPane.columnIndex="12"/>
+
+        <Button text="7" fx:id="SEVENBT" onAction="#SEVENBTAC" styleClass="numbt" GridPane.rowIndex="16" GridPane.columnIndex="0"/>
+        <Button text="8" fx:id="EIGHTBT" onAction="#EIGHTBTAC" styleClass="numbt" GridPane.rowIndex="16" GridPane.columnIndex="6"/>
+        <Button text="9" fx:id="NINEBT" onAction="#NINEBTAC" styleClass="numbt" GridPane.rowIndex="16" GridPane.columnIndex="12"/>
+
+    <Button text="X" fx:id="XBT" onAction="#XBTAC" styleClass="opbt" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+    <Button text="+" fx:id="PLUSBT" onAction="#PLUSBTAC" styleClass="opbt" GridPane.rowIndex="10" GridPane.columnIndex="6"/>
+    <Button text="C" fx:id="CBT" onAction="#CBTAC" styleClass="opbt" GridPane.rowIndex="4" GridPane.columnIndex="6"/>
+    <Button text="-" fx:id="MINUSBT" onAction="#MINUSBTAC" styleClass="opbt" GridPane.rowIndex="10" GridPane.columnIndex="12"/>
+    <Button text="➗" fx:id="DZIEBT" onAction="#DZIEBTAC" styleClass="opbt" GridPane.rowIndex="4" GridPane.columnIndex="12"/>
+    <Button text="=" fx:id="ILEBT" onAction="#ILEBTAC" styleClass="opbt" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    </GridPane>
+</VBox>

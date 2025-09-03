@@ -1,0 +1,32 @@
+
+.numbt {
+    -fx-cursor: hand;
+    -fx-background-color: #00a8a8;
+    -fx-text-fill: #333;
+    -fx-font-size: 30px;
+    -fx-background-radius: 27px;
+    -fx-border-radius: 27px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+    -fx-padding: 6 13;
+}
+.opbt {
+    -fx-cursor: hand;
+    -fx-background-color: #ff9f0a;
+    -fx-text-fill: #333;
+    -fx-font-size: 30px;
+    -fx-background-radius: 27px;
+    -fx-border-radius: 27px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+    -fx-padding: 6 13;
+}
+.displayCSS {
+    -fx-font-size: 30px;
+}
+
+.root {
+    -fx-background-color: #2c2c2c;
+}
